@@ -1,0 +1,36 @@
+<div
+  class="flex flex-row flex-nowrap items-center justify-between w-full h-[56px] bg-gray-50 pl-4 pr-4 pt-2 pb-2 border-b border-[#838B98] min-[768px]:h-[88px] min-[768px]:pl-12 min-[768px]:pr-12 min-[768px]:pt-6 min-[768px]:pb-6"
+>
+  <div
+    class="flex flex-col flex-nowrap items-center justify-between pl-0 pr-0 pt-0 pb-0 w-[80px] h-[40px] min-[768px]:w-[123px] min-[768px]:h-[62px]"
+  >
+    <img [src]="logoUrl()" class="w-[80px] h-[40px] min-[768px]:w-[123px] min-[768px]:h-[62px] hover:cursor-pointer" />
+  </div>
+  <div
+    class="flex flex-row flex-nowrap items-center justify-start pl-0 pr-0 pt-0 pb-0 h-fit w-fit gap-4"
+  >
+    @if (backButtonLabel()) {
+      <app-outline-button
+        [size]="outlineButtonSize()"
+        [label]="backButtonLabel()"
+        class="w-fit h-[32px] hidden min-[768px]:block"
+      ></app-outline-button>
+    }
+    @if (mainMenuButtonLabel()) {
+      <app-basic-button
+        [size]="basicButtonSize()"
+        [label]="mainMenuButtonLabel()"
+        class="w-fit h-[36px] hidden min-[768px]:block"
+      ></app-basic-button>
+    }
+    <div
+      class="flex flex-col flex-nowrap items-center justify-center pl-1.5 pr-1.5 pt-1.5 pb-1.5 h-[32px] w-[32px] bg-[#DCE4ED] rounded-[100px] gap-2.5 hover:cursor-pointer"
+    >
+      <div
+        class="flex flex-col flex-nowrap items-start justify-start pl-0 pr-0 pt-0 pb-0 h-fit w-fit gap-2.5"
+      >
+        <img [src]="avatarUrl()" class="w-fit h-fit" />
+      </div>
+    </div>
+  </div>
+</div>

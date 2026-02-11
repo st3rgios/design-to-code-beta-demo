@@ -1,0 +1,56 @@
+<div class="flex flex-col gap-4 p-8 w-[400px]">
+  <p class="text-xl">Intermediate Input Showcase</p>
+  <div class="flex flex-col">
+    <app-intermidiate-input
+      [formGroup]="formGroup1"
+      [controlName]="'basicInput'"
+      [label]="'Basic Label'"
+      [placeholder]="'Enter text here'"
+    ></app-intermidiate-input>
+  </div>
+
+  <div class="flex flex-col">
+    <app-intermidiate-input
+      [formGroup]="formGroup2"
+      [controlName]="'helpTextInput'"
+      [label]="'Email Address'"
+      [placeholder]="'example@email.com'"
+      [helpText]="'We will never share your email with anyone else'"
+      [hasHelpText]="true"
+    ></app-intermidiate-input>
+  </div>
+
+  <div class="flex flex-col gap-4">
+    <app-intermidiate-input
+      [formGroup]="formGroup4"
+      [controlName]="'disabledInput'"
+      [label]="'Disabled Field'"
+      [placeholder]="'This field is disabled'"
+      [disabled]="true"
+      [helpText]="'This field cannot be edited'"
+    ></app-intermidiate-input>
+  </div>
+
+  <div class="flex flex-col gap-4">
+    <app-intermidiate-input
+      [formGroup]="formGroup5"
+      [controlName]="'readonlyInput'"
+      [label]="'Readonly Field'"
+      [placeholder]="'This field is readonly'"
+      [readonly]="true"
+      [helpText]="'This field is read-only'"
+    ></app-intermidiate-input>
+  </div>
+
+  <div class="flex flex-col gap-4">
+    <app-intermidiate-input
+      [formGroup]="formGroup6"
+      [controlName]="'validationInput'"
+      [label]="'Required Field'"
+      [placeholder]="'This field is required'"
+      [showValidationTemplates]="true"
+      [helpText]="'Please enter a value'"
+    ></app-intermidiate-input>
+  </div>
+</div>
+<hr />

@@ -1,0 +1,42 @@
+<div
+  class="flex flex-col flex-nowrap items-start justify-start w-full h-fit gap-6 pl-6 pr-6 pt-6 pb-6 bg-[#FCFCFD] rounded-2xl border border-[#838B98]"
+  style="box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25)"
+>
+  <div
+    class="flex flex-row flex-nowrap items-center justify-between w-full h-fit pl-0 pr-0 pt-0 pb-0"
+  >
+    <div
+      class="flex flex-wrap flex-row items-start justify-start w-fit h-fit pl-0 pr-0 pt-0 pb-0 text-black text-2xl font-medium leading-4 text-left tracking-normal"
+    >
+      {{title()}}
+    </div>
+    <div
+      class="flex flex-col flex-nowrap items-start justify-center w-fit h-fit pl-0 pr-0 pt-0 pb-0 gap-2.5 hover:cursor-pointer"
+    >
+      <svg-icon
+        [src]="'xmark.svg'"
+        [svgClass]="'w-[11px] h-[11px] stroke-black'"
+      ></svg-icon>
+    </div>
+  </div>
+  <div
+    class="flex flex-col flex-nowrap items-start justify-start w-full h-fit pl-0 pr-0 pt-0 pb-0 gap-2.5"
+  >
+    <div
+      class="flex flex-wrap flex-row items-start justify-start w-full h-fit pl-0 pr-0 pt-0 pb-0 text-black text-base font-normal leading-4 text-left tracking-normal"
+    >
+      {{content()}}
+    </div>
+  </div>
+  @if (hasAction()) {
+  <div
+    class="flex flex-row flex-nowrap items-center justify-end w-full h-fit pl-0 pr-0 pt-0 pb-0 gap-2.5"
+  >
+    <app-basic-button
+      class="w-fit h-[36px]"
+      [size]="buttonSize()"
+      [label]="buttonLabel()"
+    ></app-basic-button>
+  </div>
+  }
+</div>

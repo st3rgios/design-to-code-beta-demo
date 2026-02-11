@@ -1,0 +1,74 @@
+{
+  "framework": "angular",
+  "figma": {
+    "projectId": "xKXB6yvhjFaGZEv85h85Sk",
+    "fontFamilyURL": "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+  },
+  "tailwindConfiguration": {
+    "enabled": true,
+    "useFlowbite": true
+  },
+  "componentMapping": {
+    "shared/ui/basic-button": {
+      "figmaNode": "2-1362",
+      "type": "Button"
+    },
+    "shared/ui/outline-button": {
+      "figmaNode": "2-1399",
+      "type": "Button"
+    },
+    "shared/ui/icon-only-button": {
+      "figmaNode": "2-1424",
+      "type": "Button"
+    },
+    "shared/ui/radio": {
+      "figmaNode": "2-1463",
+      "type": "RadioButton"
+    },
+    "shared/ui/basic-input": {
+      "figmaNode": "2-1599",
+      "type": "Input"
+    },
+    "shared/ui/intermidiate-input": {
+      "figmaNode": "2-1556",
+      "type": "Input"
+    },
+    "shared/ui/advanced-input": {
+      "figmaNode": "2-1519",
+      "type": "Input"
+    },
+    "shared/ui/dropdown-input": {
+      "figmaNode": "2-1629",
+      "type": "Input"
+    },
+    "shared/ui/dropdown": {
+      "figmaNode": "2-1662",
+      "type": "Dropdown"
+    },
+    "shared/ui/confirmation-modal": {
+      "figmaNode": "2-1697",
+      "type": "Modal"
+    },
+    "shared/ui/toast": {
+      "figmaNode": "2-1621",
+      "type": "Toast"
+    },
+    "features/waiting-list/info-message": {
+      "figmaNode": "2053-185"
+    },
+    "features/waiting-list/form": {
+      "figmaNode": "2096-338"
+    },
+    "core/header": {
+      "figmaNode": "2084-446"
+    },
+    "core/footer": {
+      "figmaNode": "2093-346"
+    }
+  },
+  "pageMapping": {
+    "pages/waiting-list": {
+      "figmaNodes": ["2052-375", "2052-392", "2052-410"]
+    }
+  }
+}

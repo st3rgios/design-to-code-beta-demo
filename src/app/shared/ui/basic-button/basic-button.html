@@ -1,0 +1,11 @@
+<button
+  #button
+  type="button"
+  [class]="buttonClasses()"
+  [disabled]="disabled()"
+  (click)="submit()"
+>
+  <div [class]="buttonCoreClasses()">
+    <div [class]="labelClasses()">{{ label() }}</div>
+  </div>
+</button>

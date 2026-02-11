@@ -1,0 +1,12 @@
+<button
+  #button
+  type="button"
+  [class]="buttonClasses()"
+  [disabled]="disabled()"
+  (click)="submit()"
+>
+  <div [class]="iconContainerClasses()">
+    <svg-icon [src]="icon()" [svgClass]="iconClasses()"></svg-icon>
+  </div>
+  <div [class]="textClasses()">{{ label() }}</div>
+</button>

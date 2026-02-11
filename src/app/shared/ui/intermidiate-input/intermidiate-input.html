@@ -1,0 +1,57 @@
+<div
+  [formGroup]="formGroup()"
+  [class]="
+    'flex flex-col flex-nowrap items-start justify-start pl-0 pr-0 pt-0 pb-0 rounded h-fit w-full gap-2.5'
+  "
+>
+  <div
+    [class]="
+      'flex flex-col flex-nowrap items-start justify-start pl-0 pr-0 pt-0 pb-0 h-fit w-full gap-1'
+    "
+  >
+    @if (label()) {
+      <div
+        [class]="
+          'flex flex-col flex-nowrap items-start justify-start pl-0 pr-0 pt-0 pb-0 h-fit w-full'
+        "
+      >
+        <div [class]="labelClasses()">{{ label() }}</div>
+      </div>
+    }
+    <div
+      [class]="
+        'flex flex-col flex-nowrap items-start justify-start pl-0 pr-0 pt-0 pb-0 rounded h-fit w-full'
+      "
+    >
+      <div [class]="containerClasses()">
+        <div
+          [class]="
+            'flex flex-row flex-nowrap items-start justify-start pl-0 pr-0 pt-0 pb-0 h-full w-full'
+          "
+        >
+          <input
+            [tabIndex]="tabIndexInput()"
+            [class]="inputClasses()"
+            [formControlName]="controlName()"
+            [placeholder]="placeholder()"
+            [readonly]="readonly()"
+            [type]="type()"
+            (focus)="onFocus()"
+            (blur)="onBlur()"
+            (mouseenter)="onMouseEnter()"
+            (mouseleave)="onMouseLeave()"
+          />
+        </div>
+      </div>
+    </div>
+    @if (hasHelpText() && helpText()) {
+      <div
+        [class]="
+          'flex flex-row flex-nowrap items-start justify-start pl-0 pr-0 pt-0 pb-0 h-fit w-full gap-2.5'
+        "
+      >
+        <div [class]="helpTextClasses()">{{ helpText() }}</div>
+      </div>
+    }
+  </div>
+</div>

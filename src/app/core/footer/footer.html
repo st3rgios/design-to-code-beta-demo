@@ -1,0 +1,23 @@
+<div
+  class="flex w-full h-[200px] min-[320px]:flex-col min-[768px]:flex-row min-[768px]:h-[121px] bg-gray-50 border-t border-[#838B98] pl-12 pr-12 pt-6 pb-6 flex-nowrap items-center justify-between"
+>
+  <div
+    class="flex h-fit w-fit gap-6 flex-nowrap items-center justify-center min-[320px]:flex-col min-[768px]:flex-row"
+  >
+    <div
+      class="flex flex-wrap flex-row items-start justify-start h-fit w-fit text-black text-xl font-normal tracking-normal leading-5 text-left underline"
+    >
+      {{ termsAndConditionsText() }}
+    </div>
+    <div
+      class="flex flex-wrap flex-row items-start justify-start h-fit w-fit text-black text-xl font-normal tracking-normal leading-5 text-left underline"
+    >
+      {{ privacyPolicyText() }}
+    </div>
+  </div>
+  <app-basic-button
+    [size]="buttonSize()"
+    [label]="buttonLabel()"
+    class="w-fit h-[36px]"
+  ></app-basic-button>
+</div>

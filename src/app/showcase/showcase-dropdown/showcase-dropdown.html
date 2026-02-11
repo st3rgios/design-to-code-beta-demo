@@ -1,0 +1,13 @@
+<div class="flex flex-col gap-8 p-8 w-[400px]">
+  <p class="text-xl">Dropdown Showcase</p>
+  <div class="flex flex-col">
+    <p class="text-lg">Default Dropdown</p>
+    <app-dropdown
+      [options]="defaultOptions"
+      [formGroup]="form"
+      [controlName]="'dropdown'"
+      [type]="'default'"
+    ></app-dropdown>
+  </div>
+</div>
+<hr />

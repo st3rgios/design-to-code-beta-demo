@@ -1,0 +1,23 @@
+<div class="w-full" [formGroup]="formGroup()" #inputContainer>
+  <div
+    [class]="containerClasses()"
+    [tabIndex]="tabIndexInput()"
+    (mouseenter)="onMouseEnter()"
+    (mouseleave)="onMouseLeave()"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+  >
+    <div [class]="innerContainerClasses()">
+      <div [class]="textContainerClasses()">
+        @if (placeholder() && !selectedValue()) {
+        <div [class]="placeholderClasses()">{{ placeholder() }}</div>
+        } @if (selectedValue()) {
+        <div [class]="selectedValueClasses()">{{ selectedValue() }}</div>
+        }
+      </div>
+    </div>
+    <div [class]="iconContainerClasses()">
+      <svg-icon [src]="iconSrc()" [svgClass]="iconClasses()"></svg-icon>
+    </div>
+  </div>
+</div>

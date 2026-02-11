@@ -1,0 +1,52 @@
+<div class="flex flex-col gap-4 p-8">
+  <p class="text-xl">Outline Button Showcase</p>
+
+  <div class="flex flex-col">
+    <p class="text-lg">Size Variations</p>
+    <div class="flex flex-row gap-4 items-center">
+      <app-outline-button
+        [size]="'small'"
+        [label]="'Small Button'"
+        [icon]="'arrow-left.svg'"
+        [disabled]="false"
+      ></app-outline-button>
+      <app-outline-button
+        [size]="'medium'"
+        [label]="'Medium Button'"
+        [icon]="'arrow-left.svg'"
+        [disabled]="false"
+      ></app-outline-button>
+      <app-outline-button
+        [size]="'large'"
+        [label]="'Large Button'"
+        [icon]="'arrow-left.svg'"
+        [disabled]="false"
+      ></app-outline-button>
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    <p class="text-lg">Disabled State</p>
+    <div class="flex flex-row gap-4 items-center">
+      <app-outline-button
+        [size]="'small'"
+        [label]="'Disabled Small'"
+        [icon]="'arrow-left.svg'"
+        [disabled]="true"
+      ></app-outline-button>
+      <app-outline-button
+        [size]="'medium'"
+        [label]="'Disabled Medium'"
+        [icon]="'arrow-left.svg'"
+        [disabled]="true"
+      ></app-outline-button>
+      <app-outline-button
+        [size]="'large'"
+        [label]="'Disabled Large'"
+        [icon]="'arrow-left.svg'"
+        [disabled]="true"
+      ></app-outline-button>
+    </div>
+  </div>
+</div>
+<hr />

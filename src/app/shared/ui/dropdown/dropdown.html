@@ -1,0 +1,42 @@
+<div [class]="containerClasses()">
+  <div
+    #dropdownTrigger
+    [class]="dropdownInputClasses()"
+    (keydown.escape)="hideDropdownMenu()"
+    (keydown.arrowDown)="dropdown?.show()"
+  >
+    <app-dropdown-input
+      [formGroup]="dropdownForm"
+      [controlName]="'dropdownFormControl'"
+      [selectedValue]="selected()?.label ?? ''"
+      [iconSrc]="iconSrc()"
+    ></app-dropdown-input>
+  </div>
+
+  <div #dropdownTarget [class]="dropdownTargetClasses()">
+    <div [class]="dropdownListClasses()">
+      @if (dropdownExpanded()) {
+        @for (option of filteredOptions(); track option.id; let i = $index) {
+          <div
+            [class]="dropdownItemClasses()"
+            (click)="onSelect(option)"
+            (keydown.enter)="onSelect(option)"
+            (keydown.escape)="hideDropdownMenu()"
+            (keydown.arrowDown)="focusNext(i)"
+            (keydown.arrowUp)="focusPrev(i)"
+            tabindex="0"
+            role="option"
+            [attr.aria-selected]="selected()?.id === option.id"
+          >
+            @if (option.icon || iconSrc()) {
+              <svg-icon [src]="option.icon || iconSrc()" [svgClass]="iconClasses()"></svg-icon>
+            }
+            <div [class]="itemContentClasses()">
+              <div [class]="itemLabelClasses()">{{ option.label }}</div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+  </div>
+</div>
