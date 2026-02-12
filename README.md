@@ -25,7 +25,7 @@ The conversion is handled externally via the DtC API, receiving only the minimal
 
 ## Codebase
 
-This repository contains a preconfigured Angular v21 project with the `design-to-code.json` file already set up and linked to an actual [Figma project](https://www.figma.com/design/xKXB6yvhjFaGZEv85h85Sk/DTC-Playground-Beta?node-id=2-1662&t=mTbjqe8sH7TiipJb-0)\*. It also includes several components that have already been generated using DtC.
+This repository contains a preconfigured Angular v21 project with the `design-to-code.json` file already set up and linked to an actual [Figma project](https://www.figma.com/design/LMq8z4SVGHzRIiTZ9uHbt1/DTC-Playground-Beta)\*. It also includes several components that have already been generated using DtC.
 
 In addition, the `design-to-code.json` file references some components and a page that are not yet part of the codebase. These are intentionally left for you to generate in order to better understand how DtC works.
 
@@ -43,7 +43,7 @@ A new browser tab will open, where you can view the components already implement
 
 ![Codespace Initialization Error](./readme/codespace_fail.png)
 
-\* When accessing the Figma project, you will be prompted to enter the Figma password that was previously provided to you.
+\* When accessing the Figma project, you will be prompted to enter this password: `Nkdj$ek*kdj`. 
 
 ### Using DtC
 
