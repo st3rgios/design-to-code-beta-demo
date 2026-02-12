@@ -31,7 +31,19 @@ In addition, the `design-to-code.json` file references some components and a pag
 
 To test DtC, create a new GitHub Codespace by clicking the `Code` dropdown, navigating to the `Codespaces` tab, and selecting **Create codespace on main**. This will launch a fully functional VS Code environment preloaded with both the Angular project and the DtC extension.
 
-Once the environment is set up (this usually takes 2–3 minutes), open a terminal inside VS Code and run:
+To monitor the set up process make sure to click on the **Building codespace** link on the toast at the bottom-right corner.
+
+<div align="center">
+    <img src="./readme/codespace-init.png" alt="Codespace Init" height="250px">
+</div>
+
+You will know when the environment is setup (usually takes 2-3 minutes) when you see the following:
+
+<div align="center">
+    <img src="./readme/codespace-ready.png" alt="Codespace Init" height="250px">
+</div>
+
+Then, open a new terminal inside VS Code and run:
 
 ```
 npm run start
@@ -41,7 +53,7 @@ A new browser tab will open, where you can view the components already implement
 
 > **Note:** In some cases, the Codespace may fail to initialize due to a GitHub Codespaces bug (check image below). If this happens, please delete the Codespace and start it again.
 
-![Codespace Initialization Error](./readme/codespace_fail.png)
+![Codespace Initialization Error](./readme/codespace-fail.png)
 
 \* When accessing the Figma project, you will be prompted to enter this password: `Nkdj$ek*kdj`. 
 
