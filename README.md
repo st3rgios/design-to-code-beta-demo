@@ -10,7 +10,7 @@ Design-to-Code (DtC) is a specialized tool for software engineering teams that b
 
 ## How it works
 
-DtC is delivered as a VS Code extension and a Figma plugin, designed to integrate smoothly into existing workflows without interrupting software engineering teams’ processes. Via a simple configuration file, called `design-to-code.json, that maps existing Figma designs to actual Angular components, engineers can start converting designs into code directly via VS Code.
+DtC is delivered as a VS Code extension and a Figma plugin, designed to integrate smoothly into existing workflows without interrupting software engineering teams’ processes. Via a simple configuration file, called `design-to-code.json`, that maps existing Figma designs to actual Angular components, engineers can start converting designs into code directly via VS Code.
 
 The conversion is handled externally via the DtC API, receiving only the minimal component or page description extracted from Figma. All Figma access and data handling occur locally on the engineer’s machine for privacy and security of design assets.
 
