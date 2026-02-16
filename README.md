@@ -5,7 +5,14 @@
 # Design-to-Code Beta Demo
 This repository contains a preconfigured Angular v21 project with the `design-to-code.json` file already set up and linked to an actual [Figma project](https://www.figma.com/design/LMq8z4SVGHzRIiTZ9uHbt1/DTC-Playground-Beta). It also includes several components that have already been generated using DtC.
 
-The `design-to-code.json` file references some components and a page that are _not_ yet part of the codebase. These are intentionally left for you to generate in order to better understand how DtC works. Instructions on how to use this repository are provided in a short introductory video, available [here](https://drive.google.com/file/d/1Xnov0NkMgeb8CQ-bWY4goaN0acNJnh7A/view), as well as in the written steps outlined below.
+The `design-to-code.json` file references some components and a page that are _not_ yet part of the codebase. These are intentionally left for you to generate in order to better understand how DtC works. Instructions on how to use this repository are provided in a short introductory video, available [here](https://drive.google.com/file/d/17rg3nDB_7Pb6G2bW21UX02aaus3p1yqZ/view?usp=drive_link), as well as in the written steps outlined below.
+
+
+<div align="center">
+  <a href="https://drive.google.com/file/d/17rg3nDB_7Pb6G2bW21UX02aaus3p1yqZ/view?usp=drive_link" target="_blank">
+      <img src="./readme/dtc-demo.gif" alt="DtC Demo Video" height="300px">
+  </a>
+</div>
 
 
 ## Tool Introduction
